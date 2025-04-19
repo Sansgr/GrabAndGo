@@ -16,9 +16,9 @@ Before you start, make sure you have the following installed on your system:
 First, clone the project from GitHub to your local machine:
 
 ```bash
-git clone https://github.com/sunil-57/collegetutorial.git
+git clone https://github.com/Sansgr/Project-GrabAndGo.git
 
-cd collegetutorial
+cd GrabAndGo
 ```
 
 **Then, start setting up your project with **DATABASE**.**

@@ -29,8 +29,8 @@ This guide explains how to import the `init.sql` and `seed.sql` files into your 
 
 2. **Create a New Database**  
    - Click on `New` in the sidebar.  
-   - Name your database (For this project setup, `collegetutorial`) and click **Create**.
-> You should see the database `collegetutorial` in the list of databases on your left.
+   - Name your database (For this project setup, `grab&go`) and click **Create**.
+> You should see the database `grab&go` in the list of databases on your left.
 
 3. **Import `init.sql`**  
    - Select your newly created database from the sidebar.
