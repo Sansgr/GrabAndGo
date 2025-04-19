@@ -16,7 +16,7 @@ Before you start, make sure you have the following installed on your system:
 First, clone the project from GitHub to your local machine:
 
 ```bash
-git clone https://github.com/Sansgr/Project-Grab-Go.git
+git clone https://github.com/Sansgr/Project-GrabAndGo.git
 
 cd GrabAndGo
 ```
