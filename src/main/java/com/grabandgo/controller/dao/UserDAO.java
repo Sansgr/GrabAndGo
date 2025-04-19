@@ -95,4 +95,65 @@ public class UserDAO {
         }
         return null;
     }
+    
+    //UpdateUser Method
+    public boolean updateUser(User user) throws ClassNotFoundException {
+        String query = "UPDATE users SET first_name = ?, last_name = ?, username = ?, " +
+                       "phone = ?, email = ?, password = ?, address = ?, gender = ? " +
+                       "WHERE user_id = ?";
+
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            
+            stmt.setString(1, user.getFirstName());
+            stmt.setString(2, user.getLastName());
+            stmt.setString(3, user.getUsername());
+            stmt.setString(4, user.getPhone());
+            stmt.setString(5, user.getEmail());
+            stmt.setString(6, user.getPassword());
+            stmt.setString(7, user.getAddress());
+            stmt.setString(8, user.getGender());
+            stmt.setInt(9, user.getId());
+
+            int rowsUpdated = stmt.executeUpdate();
+            return rowsUpdated > 0;
+            
+        } catch (SQLException e) {
+            System.err.println("Error updating user: " + e.getMessage());
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    // Get User by ID
+    public User getUserById(int userId) throws ClassNotFoundException {
+        String query = "SELECT * FROM users WHERE user_id = ?";
+        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            
+            stmt.setInt(1, userId);
+            ResultSet rs = stmt.executeQuery();
+            
+            if (rs.next()) {
+                return new User(
+                    rs.getInt("user_id"),
+                    rs.getString("first_name"),
+                    rs.getString("last_name"),
+                    rs.getString("username"),
+                    rs.getString("phone"),
+                    rs.getString("email"),
+                    rs.getString("password"),
+                    rs.getString("address"),
+                    rs.getString("gender"),
+                    rs.getString("role"),
+                    rs.getString("status")
+                );
+            }
+        } catch (SQLException e) {
+            System.err.println("Error getting user by ID: " + e.getMessage());
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

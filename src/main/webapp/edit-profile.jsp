@@ -8,7 +8,7 @@
     <style>
         * {
             margin: 0;
-            padding: 0;
+            padding: 0;.
             box-sizing: border-box;
         }
 
@@ -104,7 +104,7 @@
 
 <div class="edit-container">
     <h2>Edit Profile</h2>
-    <form action="update-profile.jsp" method="post">
+    <form action="UpdateCustomerServlet" method="post">
         <div class="form-group">
             <label for="first_name">First Name</label>
             <input type="text" id="first_name" name="first_name" placeholder="Enter first name">
