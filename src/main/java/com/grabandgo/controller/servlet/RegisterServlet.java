@@ -1,4 +1,4 @@
-package com.grabandgo.controller;
+package com.grabandgo.controller.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.grabandgo.dao.UserDAO;
+import com.grabandgo.controller.dao.UserDAO;
 import com.grabandgo.model.User;
 
 @WebServlet("/RegisterServlet")

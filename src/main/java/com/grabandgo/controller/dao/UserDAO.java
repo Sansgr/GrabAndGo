@@ -1,11 +1,11 @@
-package com.grabandgo.dao;
+package com.grabandgo.controller.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.grabandgo.database.DatabaseConnection;
+import com.grabandgo.controller.database.DatabaseConnection;
 import com.grabandgo.model.User;
 import com.grabandgo.security.PasswordUtils;
 

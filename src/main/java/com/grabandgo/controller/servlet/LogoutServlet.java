@@ -1,4 +1,4 @@
-package com.grabandgo.controller;
+package com.grabandgo.controller.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

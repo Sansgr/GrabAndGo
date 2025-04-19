@@ -1,4 +1,4 @@
-package com.grabandgo.database;
+package com.grabandgo.controller.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
