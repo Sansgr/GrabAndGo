@@ -13,9 +13,9 @@ Eclipse IDE (or any other IDE that supports Maven and Servlets)
 Clone the Repository
 First, clone the project from GitHub to your local machine:
 
-git clone https://github.com/sunil-57/collegetutorial.git
+git clone https://github.com/Sansgr/Project-Grab-Go.git
 
-cd collegetutorial
+cd GrabAndGo
 Then, start setting up your project with DATABASE.
 
 DATABASE SETUP: Please read README.MD in the db folder.
