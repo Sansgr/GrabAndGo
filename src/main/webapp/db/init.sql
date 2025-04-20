@@ -1,5 +1,5 @@
 -- Create User table
-CREATE TABLE User (
+CREATE TABLE Users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE Food (
 );
 
 -- Create Order table (note: Order is a reserved keyword in MySQL, use backticks)
-CREATE TABLE `Order` (
+CREATE TABLE Orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     order_price DECIMAL(10, 2) NOT NULL,
     payment_status VARCHAR(50),
